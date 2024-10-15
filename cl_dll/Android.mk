@@ -91,7 +91,7 @@ SRCS+=./view.cpp
 SRCS+=./input_xash3d.cpp
 SRCS+=./scoreboard.cpp
 SRCS+=./MOTD.cpp
-INCLUDES =  -I../common -I. -I../game_shared -I../pm_shared -I../engine -I../dlls -I../utils/false_vgui/include
+INCLUDES =  -I../common -I. -I../game_shared -I../pm_shared -I../engine -I../dlls -I../utils/false_vgui/include -I../public
 DEFINES = -Wno-write-strings -DLINUX -D_LINUX -Dstricmp=strcasecmp -Dstrnicmp=strncasecmp -DCLIENT_WEAPONS -DCLIENT_DLL -w -D_snprintf=snprintf
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/. \
@@ -101,6 +101,7 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/. \
 		 $(LOCAL_PATH)/../dlls \
 		 $(LOCAL_PATH)/../pm_shared \
 		 $(LOCAL_PATH)/../utils/false_vgui/include
+		 $(LOCAL_PATH)/../public
 LOCAL_CFLAGS += $(DEFINES) $(INCLUDES)
 
 ifeq ($(GOLDSOURCE_SUPPORT),1)
