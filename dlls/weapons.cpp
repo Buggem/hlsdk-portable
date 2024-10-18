@@ -1596,7 +1596,7 @@ void CBasePlayerWeapon::PrintState( void )
 	ALERT( at_console, "m_iclip:  %i\n", m_iClip );
 }
 
-TYPEDESCRIPTION	CRpg::m_SaveData[] =
+inline TYPEDESCRIPTION CRpg::m_SaveData[] =
 {
 	DEFINE_FIELD( CRpg, m_fSpotActive, FIELD_INTEGER ),
 	DEFINE_FIELD( CRpg, m_cActiveRockets, FIELD_INTEGER ),
@@ -1604,7 +1604,7 @@ TYPEDESCRIPTION	CRpg::m_SaveData[] =
 
 IMPLEMENT_SAVERESTORE( CRpg, CBasePlayerWeapon )
 
-TYPEDESCRIPTION	CRpgRocket::m_SaveData[] =
+inline TYPEDESCRIPTION CRpgRocket::m_SaveData[] =
 {
 	DEFINE_FIELD( CRpgRocket, m_flIgniteTime, FIELD_TIME ),
 	DEFINE_FIELD( CRpgRocket, m_hLauncher, FIELD_EHANDLE ),
@@ -1612,7 +1612,7 @@ TYPEDESCRIPTION	CRpgRocket::m_SaveData[] =
 
 IMPLEMENT_SAVERESTORE( CRpgRocket, CGrenade )
 
-TYPEDESCRIPTION	CShotgun::m_SaveData[] =
+inline TYPEDESCRIPTION CShotgun::m_SaveData[] =
 {
 	DEFINE_FIELD( CShotgun, m_flNextReload, FIELD_TIME ),
 	DEFINE_FIELD( CShotgun, m_fInSpecialReload, FIELD_INTEGER ),
@@ -1622,7 +1622,7 @@ TYPEDESCRIPTION	CShotgun::m_SaveData[] =
 
 IMPLEMENT_SAVERESTORE( CShotgun, CBasePlayerWeapon )
 
-TYPEDESCRIPTION	CGauss::m_SaveData[] =
+inline TYPEDESCRIPTION CGauss::m_SaveData[] =
 {
 	DEFINE_FIELD( CGauss, m_fInAttack, FIELD_INTEGER ),
 	//DEFINE_FIELD( CGauss, m_flStartCharge, FIELD_TIME ),
@@ -1633,7 +1633,7 @@ TYPEDESCRIPTION	CGauss::m_SaveData[] =
 
 IMPLEMENT_SAVERESTORE( CGauss, CBasePlayerWeapon )
 
-TYPEDESCRIPTION	CEgon::m_SaveData[] =
+inline TYPEDESCRIPTION CEgon::m_SaveData[] =
 {
 	//DEFINE_FIELD( CEgon, m_pBeam, FIELD_CLASSPTR ),
 	//DEFINE_FIELD( CEgon, m_pNoise, FIELD_CLASSPTR ),
@@ -1647,7 +1647,7 @@ TYPEDESCRIPTION	CEgon::m_SaveData[] =
 
 IMPLEMENT_SAVERESTORE( CEgon, CBasePlayerWeapon )
 
-TYPEDESCRIPTION CHgun::m_SaveData[] =
+inline TYPEDESCRIPTION CHgun::m_SaveData[] =
 {
 	DEFINE_FIELD( CHgun, m_flRechargeTime, FIELD_TIME ),
 	DEFINE_FIELD( CHgun, m_iFirePhase, FIELD_INTEGER ),
@@ -1655,7 +1655,7 @@ TYPEDESCRIPTION CHgun::m_SaveData[] =
 
 IMPLEMENT_SAVERESTORE( CHgun, CBasePlayerWeapon )
 
-TYPEDESCRIPTION	CSatchel::m_SaveData[] = 
+inline TYPEDESCRIPTION CSatchel::m_SaveData[] = 
 {
 	DEFINE_FIELD( CSatchel, m_chargeReady, FIELD_INTEGER ),
 };
